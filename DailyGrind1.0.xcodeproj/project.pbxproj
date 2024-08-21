@@ -14,6 +14,20 @@
 		379716392C755E4800648B5D /* DailyGrind1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716382C755E4800648B5D /* DailyGrind1_0Tests.swift */; };
 		379716432C755E4800648B5D /* DailyGrind1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716422C755E4800648B5D /* DailyGrind1_0UITests.swift */; };
 		379716452C755E4800648B5D /* DailyGrind1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716442C755E4800648B5D /* DailyGrind1_0UITestsLaunchTests.swift */; };
+		379716552C75636A00648B5D /* ProjectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716542C75636A00648B5D /* ProjectGroup.swift */; };
+		379716572C75638300648B5D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716562C75638300648B5D /* Project.swift */; };
+		379716592C7563B500648B5D /* Objectives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716582C7563B500648B5D /* Objectives.swift */; };
+		3797165B2C75643200648B5D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165A2C75643200648B5D /* Notes.swift */; };
+		3797165D2C75679100648B5D /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165C2C75679100648B5D /* TabModel.swift */; };
+		379716602C7567E100648B5D /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165F2C7567E100648B5D /* TabBarHome.swift */; };
+		379716622C75680800648B5D /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716612C75680800648B5D /* TabPosition.swift */; };
+		379716642C75682700648B5D /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716632C75682700648B5D /* TabShape.swift */; };
+		379716662C75692200648B5D /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716652C75692200648B5D /* HapticsManager.swift */; };
+		379716682C75830400648B5D /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716672C75830400648B5D /* NotesView.swift */; };
+		3797166A2C75834900648B5D /* GrindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716692C75834900648B5D /* GrindView.swift */; };
+		3797166C2C75837800648B5D /* ProjectsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797166B2C75837800648B5D /* ProjectsListScreen.swift */; };
+		3797166E2C7583A400648B5D /* NotesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797166D2C7583A400648B5D /* NotesListScreen.swift */; };
+		379716702C7583F400648B5D /* ObjectivesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,20 @@
 		3797163E2C755E4800648B5D /* DailyGrind1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyGrind1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379716422C755E4800648B5D /* DailyGrind1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrind1_0UITests.swift; sourceTree = "<group>"; };
 		379716442C755E4800648B5D /* DailyGrind1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrind1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		379716542C75636A00648B5D /* ProjectGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectGroup.swift; sourceTree = "<group>"; };
+		379716562C75638300648B5D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		379716582C7563B500648B5D /* Objectives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objectives.swift; sourceTree = "<group>"; };
+		3797165A2C75643200648B5D /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		3797165C2C75679100648B5D /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		3797165F2C7567E100648B5D /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
+		379716612C75680800648B5D /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		379716632C75682700648B5D /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		379716652C75692200648B5D /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		379716672C75830400648B5D /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		379716692C75834900648B5D /* GrindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindView.swift; sourceTree = "<group>"; };
+		3797166B2C75837800648B5D /* ProjectsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListScreen.swift; sourceTree = "<group>"; };
+		3797166D2C7583A400648B5D /* NotesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListScreen.swift; sourceTree = "<group>"; };
+		3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +103,7 @@
 		3797161A2C755E4700648B5D = {
 			isa = PBXGroup;
 			children = (
+				379716262C755E4700648B5D /* DailyGrind1_0App.swift */,
 				379716252C755E4700648B5D /* DailyGrind1.0 */,
 				379716372C755E4800648B5D /* DailyGrind1.0Tests */,
 				379716412C755E4800648B5D /* DailyGrind1.0UITests */,
@@ -95,8 +124,10 @@
 		379716252C755E4700648B5D /* DailyGrind1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				379716262C755E4700648B5D /* DailyGrind1_0App.swift */,
-				379716282C755E4700648B5D /* ContentView.swift */,
+				3797165E2C7567CA00648B5D /* TabBarPackage */,
+				379716532C7562AA00648B5D /* Support */,
+				379716522C75629E00648B5D /* Models */,
+				379716512C755F1400648B5D /* Views */,
 				3797162A2C755E4800648B5D /* Assets.xcassets */,
 				3797162C2C755E4800648B5D /* DailyGrind1_0.entitlements */,
 				3797162D2C755E4800648B5D /* Preview Content */,
@@ -127,6 +158,49 @@
 				379716442C755E4800648B5D /* DailyGrind1_0UITestsLaunchTests.swift */,
 			);
 			path = DailyGrind1.0UITests;
+			sourceTree = "<group>";
+		};
+		379716512C755F1400648B5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				379716282C755E4700648B5D /* ContentView.swift */,
+				379716672C75830400648B5D /* NotesView.swift */,
+				379716692C75834900648B5D /* GrindView.swift */,
+				3797166B2C75837800648B5D /* ProjectsListScreen.swift */,
+				3797166D2C7583A400648B5D /* NotesListScreen.swift */,
+				3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		379716522C75629E00648B5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				379716542C75636A00648B5D /* ProjectGroup.swift */,
+				379716562C75638300648B5D /* Project.swift */,
+				379716582C7563B500648B5D /* Objectives.swift */,
+				3797165A2C75643200648B5D /* Notes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		379716532C7562AA00648B5D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				379716652C75692200648B5D /* HapticsManager.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3797165E2C7567CA00648B5D /* TabBarPackage */ = {
+			isa = PBXGroup;
+			children = (
+				3797165C2C75679100648B5D /* TabModel.swift */,
+				3797165F2C7567E100648B5D /* TabBarHome.swift */,
+				379716612C75680800648B5D /* TabPosition.swift */,
+				379716632C75682700648B5D /* TabShape.swift */,
+			);
+			path = TabBarPackage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +333,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379716602C7567E100648B5D /* TabBarHome.swift in Sources */,
+				379716552C75636A00648B5D /* ProjectGroup.swift in Sources */,
+				379716682C75830400648B5D /* NotesView.swift in Sources */,
+				3797166A2C75834900648B5D /* GrindView.swift in Sources */,
 				379716292C755E4700648B5D /* ContentView.swift in Sources */,
+				3797166C2C75837800648B5D /* ProjectsListScreen.swift in Sources */,
+				379716592C7563B500648B5D /* Objectives.swift in Sources */,
+				379716662C75692200648B5D /* HapticsManager.swift in Sources */,
 				379716272C755E4700648B5D /* DailyGrind1_0App.swift in Sources */,
+				3797166E2C7583A400648B5D /* NotesListScreen.swift in Sources */,
+				379716572C75638300648B5D /* Project.swift in Sources */,
+				3797165D2C75679100648B5D /* TabModel.swift in Sources */,
+				3797165B2C75643200648B5D /* Notes.swift in Sources */,
+				379716622C75680800648B5D /* TabPosition.swift in Sources */,
+				379716642C75682700648B5D /* TabShape.swift in Sources */,
+				379716702C7583F400648B5D /* ObjectivesListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
