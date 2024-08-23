@@ -127,6 +127,7 @@
 				3797165E2C7567CA00648B5D /* TabBarPackage */,
 				379716532C7562AA00648B5D /* Support */,
 				379716522C75629E00648B5D /* Models */,
+				379716712C7586C900648B5D /* Screens */,
 				379716512C755F1400648B5D /* Views */,
 				3797162A2C755E4800648B5D /* Assets.xcassets */,
 				3797162C2C755E4800648B5D /* DailyGrind1_0.entitlements */,
@@ -166,9 +167,6 @@
 				379716282C755E4700648B5D /* ContentView.swift */,
 				379716672C75830400648B5D /* NotesView.swift */,
 				379716692C75834900648B5D /* GrindView.swift */,
-				3797166B2C75837800648B5D /* ProjectsListScreen.swift */,
-				3797166D2C7583A400648B5D /* NotesListScreen.swift */,
-				3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +199,16 @@
 				379716632C75682700648B5D /* TabShape.swift */,
 			);
 			path = TabBarPackage;
+			sourceTree = "<group>";
+		};
+		379716712C7586C900648B5D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3797166D2C7583A400648B5D /* NotesListScreen.swift */,
+				3797166B2C75837800648B5D /* ProjectsListScreen.swift */,
+				3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

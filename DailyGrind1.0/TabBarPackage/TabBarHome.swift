@@ -83,7 +83,6 @@ struct TabBarHome: View {
         /// Adding Animation
         .animation(.interactiveSpring(response: 0.3, dampingFraction: 0.7, blendDuration: 0.7), value: activeTab)
     }
-       
 }
 
 /// Tab Bar Item
@@ -101,9 +100,9 @@ struct TabItem: View {
         VStack(spacing: 5) {
             Image(systemName: tab.systemImage)
                 .font(.title2)
-                .foregroundColor(activeTab == tab ? .primary : inactiveTint)
+                .foregroundColor(activeTab == tab ? .black : inactiveTint)
                 /// Increasing Size for the Active Tab
-                .frame(width: activeTab == tab ? 45 : 30, height: activeTab == tab ? 45 : 30)
+                .frame(width: activeTab == tab ? 50 : 47, height: activeTab == tab ? 50 : 47)
                 .background {
                     if activeTab == tab {
                         Circle()

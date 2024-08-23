@@ -11,8 +11,9 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case grind = "Grind"
     case projects = "Projects"
+    case objectives = "Objectives"
     case notes = "Notes"
-    case objectives = "Tasks"
+  
     
     
     var systemImage: String {
