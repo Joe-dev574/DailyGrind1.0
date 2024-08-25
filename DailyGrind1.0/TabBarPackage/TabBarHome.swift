@@ -136,6 +136,8 @@ struct TabItem: View {
 }
 
 #Preview {
-    TabBarHome()
-}
+    let preview = Preview(Project.self)
+    preview.addExamples(Project.sampleProjects)
+    return TabBarHome()
+        .modelContainer(preview.container)}
 

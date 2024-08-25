@@ -46,11 +46,11 @@ class Project {
         case .planning:
             Image(systemName: "calendar.badge.clock")
         case .active:
-            Image(systemName: "arrow.trianglehead.2.clockwise.rotate.90.circle")
+            Image(systemName: "hourglass.circle")
         case .completed:
             Image(systemName: "checkmark.seal")
         case .hold:
-            Image(systemName: "exclamationmark.octagon")
+            Image(systemName: "exclamationmark.circle")
         }
     }
 }
