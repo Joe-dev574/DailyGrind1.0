@@ -31,14 +31,56 @@ struct ProjectList: View {
         _projects = Query(filter: predicate, sort: sortDescriptors)
     }
     var body: some View {
-    
-            ScrollView{
+        //MARK:  SCROLL VIEW
+        GeometryReader {
+            let size = $0.size
+            ScrollView(.vertical, showsIndicators: false){
                 VStack (spacing: 25){
                     ForEach(projects) { project in
                         NavigationLink{
-                            EditProjectScreen(project: project)
+                            EditProjectView(project: project)
                         }label:{
-                            ProjectCardView(project: project)
+                            HStack {
+                                HStack(alignment: .center){
+                                    project.icon
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundStyle(.launchAccent)
+                                    VStack(alignment: .leading){
+                                        Text(project.title)
+                                            .lineLimit(1)
+                                            .font(.title3)
+                                            .foregroundStyle(.launchAccent)
+                                            .cornerRadius(10)
+                                            .fontWeight(.bold)
+                                        
+                                        Text(project.briefDescription)
+                                            .foregroundStyle(.secondaryText)
+                                            .multilineTextAlignment(.leading)
+                                            .lineLimit(5)
+                                            .cornerRadius(10)
+                                            .font(.system(size: 14))
+                                            .padding(.horizontal)
+                                            .padding(.bottom, 5)
+                                        
+                                        if let focusList = project.focusList {
+                                            ViewThatFits {
+                                                FocusListStackView(focusList: focusList)
+                                                ScrollView(.horizontal, showsIndicators: false) {
+                                                    FocusListStackView(focusList: focusList)
+                                                }
+                                            }
+                                        }
+                                    }
+                                    Spacer()
+                                }
+                                .padding(5)
+                                .padding(.horizontal, 2)
+                                .background {
+                                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                        .fill(.gray).opacity(0.1)
+                                }
+                            }
                         }
                     }
                     .onDelete { indexSet in
@@ -48,9 +90,11 @@ struct ProjectList: View {
                         }
                     }
                 }
+            }
         }
     }
 }
+
 #Preview {
     let preview = Preview(Project.self)
     preview.addExamples(Project.sampleProjects)

@@ -17,7 +17,7 @@
 		379716552C75636A00648B5D /* ProjectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716542C75636A00648B5D /* ProjectGroup.swift */; };
 		379716572C75638300648B5D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716562C75638300648B5D /* Project.swift */; };
 		379716592C7563B500648B5D /* Objectives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716582C7563B500648B5D /* Objectives.swift */; };
-		3797165B2C75643200648B5D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165A2C75643200648B5D /* Notes.swift */; };
+		3797165B2C75643200648B5D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165A2C75643200648B5D /* Note.swift */; };
 		3797165D2C75679100648B5D /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165C2C75679100648B5D /* TabModel.swift */; };
 		379716602C7567E100648B5D /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797165F2C7567E100648B5D /* TabBarHome.swift */; };
 		379716622C75680800648B5D /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716612C75680800648B5D /* TabPosition.swift */; };
@@ -34,8 +34,15 @@
 		3797167B2C796DFA00648B5D /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797167A2C796DFA00648B5D /* ProjectList.swift */; };
 		3797167E2C7A2C8F00648B5D /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797167D2C7A2C8F00648B5D /* PreviewContainer.swift */; };
 		379716802C7A2D3400648B5D /* ProjectSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797167F2C7A2D3400648B5D /* ProjectSamples.swift */; };
-		379716822C7A319900648B5D /* EditProjectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716812C7A319900648B5D /* EditProjectScreen.swift */; };
 		379716862C7A512E00648B5D /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716852C7A512E00648B5D /* ProjectCardView.swift */; };
+		379716882C7B714D00648B5D /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716872C7B714D00648B5D /* Focus.swift */; };
+		3797168A2C7B719100648B5D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716892C7B719100648B5D /* UIColor.swift */; };
+		3797168C2C7B71B600648B5D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797168B2C7B71B600648B5D /* Color.swift */; };
+		3797168E2C7B732100648B5D /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797168D2C7B732100648B5D /* FocusView.swift */; };
+		379716902C7B74E600648B5D /* NewFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797168F2C7B74E600648B5D /* NewFocusView.swift */; };
+		379716922C7B761800648B5D /* FocusListSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716912C7B761800648B5D /* FocusListSamples.swift */; };
+		379716942C7B807B00648B5D /* FocusListStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716932C7B807B00648B5D /* FocusListStackView.swift */; };
+		379716962C7B9AEE00648B5D /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379716952C7B9AEE00648B5D /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +77,7 @@
 		379716542C75636A00648B5D /* ProjectGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectGroup.swift; sourceTree = "<group>"; };
 		379716562C75638300648B5D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		379716582C7563B500648B5D /* Objectives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objectives.swift; sourceTree = "<group>"; };
-		3797165A2C75643200648B5D /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		3797165A2C75643200648B5D /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3797165C2C75679100648B5D /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		3797165F2C7567E100648B5D /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
 		379716612C75680800648B5D /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
@@ -87,8 +94,15 @@
 		3797167A2C796DFA00648B5D /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 		3797167D2C7A2C8F00648B5D /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		3797167F2C7A2D3400648B5D /* ProjectSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSamples.swift; sourceTree = "<group>"; };
-		379716812C7A319900648B5D /* EditProjectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectScreen.swift; sourceTree = "<group>"; };
 		379716852C7A512E00648B5D /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		379716872C7B714D00648B5D /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		379716892C7B719100648B5D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3797168B2C7B71B600648B5D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3797168D2C7B732100648B5D /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		3797168F2C7B74E600648B5D /* NewFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFocusView.swift; sourceTree = "<group>"; };
+		379716912C7B761800648B5D /* FocusListSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusListSamples.swift; sourceTree = "<group>"; };
+		379716932C7B807B00648B5D /* FocusListStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusListStackView.swift; sourceTree = "<group>"; };
+		379716952C7B9AEE00648B5D /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,11 +197,15 @@
 			children = (
 				379716282C755E4700648B5D /* ContentView.swift */,
 				379716672C75830400648B5D /* NotesView.swift */,
+				379716952C7B9AEE00648B5D /* EditProjectView.swift */,
 				379716692C75834900648B5D /* GrindView.swift */,
 				379716742C78121900648B5D /* PriorityView.swift */,
 				379716782C79698800648B5D /* HeaderView.swift */,
 				3797167A2C796DFA00648B5D /* ProjectList.swift */,
 				379716852C7A512E00648B5D /* ProjectCardView.swift */,
+				3797168D2C7B732100648B5D /* FocusView.swift */,
+				3797168F2C7B74E600648B5D /* NewFocusView.swift */,
+				379716932C7B807B00648B5D /* FocusListStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,7 +216,8 @@
 				379716542C75636A00648B5D /* ProjectGroup.swift */,
 				379716562C75638300648B5D /* Project.swift */,
 				379716582C7563B500648B5D /* Objectives.swift */,
-				3797165A2C75643200648B5D /* Notes.swift */,
+				3797165A2C75643200648B5D /* Note.swift */,
+				379716872C7B714D00648B5D /* Focus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				379716652C75692200648B5D /* HapticsManager.swift */,
+				379716892C7B719100648B5D /* UIColor.swift */,
+				3797168B2C7B71B600648B5D /* Color.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -229,7 +250,6 @@
 				3797166B2C75837800648B5D /* ProjectsListScreen.swift */,
 				3797166F2C7583F300648B5D /* ObjectivesListScreen.swift */,
 				379716762C78144000648B5D /* AddProjectScreen.swift */,
-				379716812C7A319900648B5D /* EditProjectScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -239,6 +259,7 @@
 			children = (
 				3797167D2C7A2C8F00648B5D /* PreviewContainer.swift */,
 				3797167F2C7A2D3400648B5D /* ProjectSamples.swift */,
+				379716912C7B761800648B5D /* FocusListSamples.swift */,
 			);
 			path = SampleProjects;
 			sourceTree = "<group>";
@@ -374,23 +395,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				379716602C7567E100648B5D /* TabBarHome.swift in Sources */,
+				379716902C7B74E600648B5D /* NewFocusView.swift in Sources */,
+				3797168E2C7B732100648B5D /* FocusView.swift in Sources */,
 				379716552C75636A00648B5D /* ProjectGroup.swift in Sources */,
 				379716682C75830400648B5D /* NotesView.swift in Sources */,
 				3797166A2C75834900648B5D /* GrindView.swift in Sources */,
 				379716752C78121900648B5D /* PriorityView.swift in Sources */,
 				379716292C755E4700648B5D /* ContentView.swift in Sources */,
+				379716962C7B9AEE00648B5D /* EditProjectView.swift in Sources */,
 				3797167B2C796DFA00648B5D /* ProjectList.swift in Sources */,
 				379716792C79698800648B5D /* HeaderView.swift in Sources */,
 				3797166C2C75837800648B5D /* ProjectsListScreen.swift in Sources */,
+				379716942C7B807B00648B5D /* FocusListStackView.swift in Sources */,
+				3797168A2C7B719100648B5D /* UIColor.swift in Sources */,
+				379716922C7B761800648B5D /* FocusListSamples.swift in Sources */,
 				379716592C7563B500648B5D /* Objectives.swift in Sources */,
-				379716822C7A319900648B5D /* EditProjectScreen.swift in Sources */,
 				379716662C75692200648B5D /* HapticsManager.swift in Sources */,
 				379716272C755E4700648B5D /* DailyGrind1_0App.swift in Sources */,
 				3797167E2C7A2C8F00648B5D /* PreviewContainer.swift in Sources */,
 				3797166E2C7583A400648B5D /* NotesListScreen.swift in Sources */,
+				379716882C7B714D00648B5D /* Focus.swift in Sources */,
+				3797168C2C7B71B600648B5D /* Color.swift in Sources */,
 				379716572C75638300648B5D /* Project.swift in Sources */,
 				3797165D2C75679100648B5D /* TabModel.swift in Sources */,
-				3797165B2C75643200648B5D /* Notes.swift in Sources */,
+				3797165B2C75643200648B5D /* Note.swift in Sources */,
 				379716622C75680800648B5D /* TabPosition.swift in Sources */,
 				379716642C75682700648B5D /* TabShape.swift in Sources */,
 				379716862C7A512E00648B5D /* ProjectCardView.swift in Sources */,

@@ -15,7 +15,7 @@ struct HeaderView: View {
                 .font(.title3)
                 .fontWeight(.bold)
                                .padding(.leading, 10)
-                               .foregroundColor(.orange)
+                               .foregroundColor(.launchAccent)
                                .offset(y: 2)
             Text("Grind")
                 .font(.largeTitle)

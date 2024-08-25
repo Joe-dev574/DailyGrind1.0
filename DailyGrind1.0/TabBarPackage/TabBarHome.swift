@@ -54,7 +54,7 @@ struct TabBarHome: View {
     /// Custom Tab Bar
     /// With More Easy Customization
     @ViewBuilder
-    func CustomTabBar(_ tint: Color = .colorOrange, _ inactiveTint: Color = .colorBlue) -> some View {
+    func CustomTabBar(_ tint: Color = .launchAccent, _ inactiveTint: Color = .secondaryText) -> some View {
         /// Moving all the Remaining Tab Item's to Bottom
         HStack(alignment: .bottom, spacing: 0) {
             ForEach(Tab.allCases, id: \.rawValue) {
@@ -102,18 +102,19 @@ struct TabItem: View {
                 .font(.title2)
                 .foregroundColor(activeTab == tab ? .black : inactiveTint)
                 /// Increasing Size for the Active Tab
-                .frame(width: activeTab == tab ? 50 : 47, height: activeTab == tab ? 50 : 47)
+                .frame(width: activeTab == tab ? 50 : 40, height: activeTab == tab ? 50 : 40)
                 .background {
                     if activeTab == tab {
-                        Circle()
+                        RoundedRectangle(cornerRadius: 10.0)
                             .fill(tint.gradient)
                             .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
+                            .frame(width: 50, height: 35)
                     }
                 }
             
             Text(tab.rawValue)
                 .font(.caption)
-                .foregroundColor(activeTab == tab ? tint : .primary)
+                .foregroundStyle(activeTab == tab ? tint : .secondaryText)
         }
         .frame(maxWidth: .infinity)
         .contentShape(Rectangle())

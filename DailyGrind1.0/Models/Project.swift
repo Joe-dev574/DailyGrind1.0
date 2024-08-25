@@ -15,10 +15,14 @@ class Project {
     var dateAdded: Date
     var dateStarted: Date
     var dateCompleted: Date
-    var notes: String
     var priority: Int?
     var status: Status.RawValue
-    var recommendedBy: String = ""
+    var assignedTo: String = ""
+    @Relationship(inverse: \Focus.projects)
+    var focusList: [Focus]?
+    @Relationship(deleteRule: .cascade)
+    var notes: [Note]?
+    
     
     init(
         title: String,
@@ -26,20 +30,18 @@ class Project {
         dateAdded: Date = Date.now,
         dateStarted: Date = Date.distantPast,
         dateCompleted: Date = Date.distantPast,
-        notes: String = "",
         priority: Int? = nil,
         status: Status = .active,
-        recommendedBy: String = ""
+        assignedTo: String = ""
     ) {
         self.title = title
         self.briefDescription = briefDescription
         self.dateAdded = dateAdded
         self.dateStarted = dateStarted
         self.dateCompleted = dateCompleted
-        self.notes = notes
         self.priority = priority
         self.status = status.rawValue
-        self.recommendedBy = recommendedBy
+        self.assignedTo = assignedTo
     }
     var icon: Image {
         switch Status(rawValue: status)! {
@@ -54,8 +56,7 @@ class Project {
         }
     }
 }
-
-
+///TODO:  create custom icons for icon
 enum Status: Int, Codable, Identifiable, CaseIterable {
     case planning,active, completed, hold
     var id: Self {

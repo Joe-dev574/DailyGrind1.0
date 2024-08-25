@@ -22,32 +22,38 @@ struct ProjectsListScreen: View {
     @State private var sortOrder = SortOrder.status
     @State private var filter = ""
     var body: some View {
-        NavigationStack {
-            ProjectList(sortOrder: sortOrder, filterString: filter).cornerRadius(10.0)
-                .padding(.horizontal, 4)
-          //     .searchable(text: $filter, prompt: Text("Search with title or description"))
-              
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        HeaderView()
-                    }
-                    ToolbarItem(placement: .topBarTrailing){
-                        Button {
-                            createNewProject = true
-                        }label: {
-                            Image(systemName: "plus.circle.fill")
-                                .resizable()
-                                .frame(width: 35, height: 35)
+        ZStack {
+            NavigationStack {
+                ProjectList(sortOrder: sortOrder, filterString: filter).cornerRadius(10.0)
+                    .padding(.horizontal, 4)
+              //     .searchable(text: $filter, prompt: Text("Search with title or description"))
+                  
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            HeaderView()
+                        }
+                        ToolbarItem(placement: .topBarTrailing){
+                            Button {
+                                createNewProject = true
+                            }label: {
+                                Image(systemName: "plus.circle.fill")
+                                    .resizable()
+                                    .frame(width: 35, height: 35)
+                            }
                         }
                     }
-                }
-                .sheet(isPresented: $createNewProject) {
-                    AddProjectScreen()
-                        .presentationDetents([.height(350)])
-                }
+                    .sheet(isPresented: $createNewProject) {
+                        AddProjectScreen()
+                            .presentationDetents([.height(350)])
+                    }
+            }
+           
+           
+        }
+            
         }
     }
-}
+
 
 
 #Preview {
@@ -56,3 +62,5 @@ struct ProjectsListScreen: View {
     return ProjectsListScreen()
         .modelContainer(preview.container)
 }
+
+

@@ -21,16 +21,17 @@ struct ProjectCardView: View {
                     project.icon
                         .resizable()
                         .frame(width: 35, height: 35)
+                        .foregroundStyle(.launchAccent)
                     VStack(alignment: .leading){
                         Text(project.title)
                             .lineLimit(1)
                             .font(.title3)
-                            .foregroundStyle(.accent)
+                            .foregroundStyle(.launchAccent)
                             .cornerRadius(10)
                             .fontWeight(.bold)
                            
                         Text(project.briefDescription)
-                            .foregroundStyle(.black)
+                            .foregroundStyle(.secondaryText)
                             .multilineTextAlignment(.leading)
                             .lineLimit(5)
                             .cornerRadius(10)
@@ -38,7 +39,6 @@ struct ProjectCardView: View {
                             .padding(.horizontal)
                             .padding(.bottom, 5)
                     }
-                    .padding(4)
                 }
                 Spacer()
             }
